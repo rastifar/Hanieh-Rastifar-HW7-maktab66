@@ -4,21 +4,23 @@ class Media{
     }
 }
 class Book extends Media{
-    constructor(type,bookname){
+    constructor(type,bookName,publishYear){
         super(type)
-        this.bookname = bookname
+        this.bookName = bookName
+        this.publishYear = publishYear
     }
 }
 
 class Film extends Media{
-    constructor(type,Moviename){
+    constructor(type,MovieName,genres){
         super(type)
-        this.Moviename=Moviename
+        this.MovieName=MovieName
+        this.genres = genres
     }
 }
 
-const book = new Book("book","javeScript")
-const film = new Film("film","javeScriptMovie")
+const book = new Book("book","javeScript",1998)
+const film = new Film("film","javeScriptMovie","Comedy")
 
 console.log(book)
 console.log(film)

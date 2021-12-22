@@ -39,7 +39,7 @@ Lesson.prototype.project =function(project){
     this.project = project
 }
 
-softEngineeringClass.book = "date"
+softEngineeringClass.book = "silvershots"
 networkClass.project = true
 
 print.call(softEngineeringClass)
